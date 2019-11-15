@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">-->
+
+</head>
+<style>
+    .app-name img {
+        width: 50%;
+    }
+</style>
+<body>
+<div id="app">
+    <img style="width: 200px" src="../audio.svg" alt="">
+</div>
+<script>
+    window.$docsify = {
+        nameLink: 'https://kevinethan.github.io/book/',
+        name: 'KevinEthan',
+        repo: 'https://github.com/kevinEthan/book/docker',
+        maxLevel: 3,
+        auto2top: true,
+        logo: 'logo.png',
+        // themeColor: '#FF6700',
+        mergeNavbar: true,
+        ext: '.md',
+        autoHeader: true,
+        subMaxLevel: 2,
+        loadSidebar: true,
+        notFoundPage: '404.html',
+        // 完整配置参数
+        search: {
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            // 支持本地化
+            placeholder: {
+                '/': '搜索',
+            },
+            // 支持本地化
+            noData: {
+                '/': '找不到结果',
+            },
+            // 搜索标题的最大程级, 1 - 6
+            depth: 1
+        },
+
+    }
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+<script src="//unpkg.com/docsify-copy-code"></script>
+<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-docker.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-git.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: 'e2db8d0657a16844d780',
+        clientSecret: 'cf42210a0a0f8162ff881c971b7f426a2888d633',
+        repo: 'book',
+        owner: 'kevinEthan',
+        admin: ['AbelEthan', 'CrazyBoyKevin'],
+        distractionFreeMode: false
+    })
+</script>
+</body>
+</html>
